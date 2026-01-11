@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report:
-- Version change: 1.1.0 → 1.1.1 (reordered principles to prioritize borrowing and simplicity)
+- Version change: 1.1.1 → 1.2.0 (added issue-driven branching principle)
 - Modified principles: N/A
-- Added sections: N/A
+- Added sections: Issue-Driven Branching principle
 - Removed sections: N/A
 - Templates requiring updates:
   ✅ plan-template.md - Constitution Check section uses dynamic references
@@ -20,6 +20,11 @@ Sync Impact Report:
 The system MUST borrow all core functionalities from the original project, which have been verified in production, to avoid too-early over-engineering.
 
 **Rationale**: Leveraging existing, tested code ensures reliability, reduces development time, and maintains the project's focus on proven patterns rather than reinventing the wheel.
+
+### Issue-Driven Branching
+All development work MUST start from a GitHub Issue. Branches MUST follow the naming convention '{feat, or fix, or ...}/#{Issue ID}/{short-description}', where Issue ID is specified by the user and ensures traceability.
+
+**Rationale**: Public GitHub projects rely on Issues for collaboration and tracking; this convention maintains project continuity, prevents untracked changes, and aligns with standard GitHub workflows.
 
 ### Simplicity & Maintainability
 The system MUST remain simple and focused, following the original project's single-script pattern. Code MUST be readable, well-documented, and use standard Python libraries where possible. GitHub Actions workflow MUST be straightforward and easy to understand.
@@ -69,4 +74,4 @@ This constitution governs all development decisions for the Telegram Bot for Twi
 
 **Rationale**: A clear governance structure ensures the project maintains its focus on reliable, simple multi-account monitoring as it evolves.
 
-**Version**: 1.1.1 | **Ratified**: 2026-01-11 | **Last Amended**: 2026-01-11
+**Version**: 1.2.0 | **Ratified**: 2026-01-11 | **Last Amended**: 2026-01-11
