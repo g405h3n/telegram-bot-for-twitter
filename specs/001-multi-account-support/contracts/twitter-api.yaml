@@ -1,0 +1,16 @@
+# Twitter API v2 Contracts
+
+## GET /2/lists/{id}/tweets
+- Purpose: Fetch recent tweets from the list.
+- Params: max_results=20, tweet.fields=created_at,referenced_tweets,author_id, since_id (optional)
+- Response: {"data": [{"id": "string", "text": "string", "created_at": "string", "referenced_tweets": [...], "author_id": "string"}]}
+
+## GET /2/lists/{id}/tweets
+- Purpose: Fetch recent tweets from the list.
+- Params: max_results=20, tweet.fields=created_at,referenced_tweets,author_id, since_id (optional)
+- Response: {"data": [{"id": "string", "text": "string", "created_at": "string", "referenced_tweets": [...], "author_id": "string"}]}
+
+## PUT /2/lists/{id}
+- Purpose: Update list details if needed.
+- Payload: {"name": "string"}
+- Response: {"data": {"updated": true}}
